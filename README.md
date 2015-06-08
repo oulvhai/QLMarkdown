@@ -11,6 +11,9 @@
 
 A Quick Look plugin for Markdown files. Inspired by [QLSwift](https://github.com/lexrus/QLSwift).
 
+![preview](https://cloud.githubusercontent.com/assets/2174294/8028087/2caa721c-0dd8-11e5-9c95-9e5bdc34edd5.png)
+
+![thumb](https://cloud.githubusercontent.com/assets/2174294/8028085/25de1dbc-0dd8-11e5-9c91-a6ad4d922f5a.png)
 
 
 ## Downloads
