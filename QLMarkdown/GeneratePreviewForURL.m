@@ -2,6 +2,9 @@
 #include <CoreServices/CoreServices.h>
 #include <QuickLook/QuickLook.h>
 
+#import <Cocoa/Cocoa.h>
+#import "MarkdownRenderer.h"
+
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options);
 void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
@@ -13,7 +16,13 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options)
 {
-    // To complete your generator please implement the function GeneratePreviewForURL in GeneratePreviewForURL.c
+    CFDataRef data = (__bridge CFDataRef) renderMarkdownWithHTML((__bridge NSURL*) url);
+    
+    if (data) {
+        CFDictionaryRef props = (__bridge CFDictionaryRef) [NSDictionary dictionary];
+        QLPreviewRequestSetDataRepresentation(preview, data, kUTTypeHTML, props);
+    }
+    
     return noErr;
 }
 

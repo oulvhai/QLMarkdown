@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		45FBC7521B207BFB00361B7B /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.c */; };
-		45FBC7541B207BFB00361B7B /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.c */; };
+		45F9BDF71B2098E5001EC7EF /* theme-chrome.js in Resources */ = {isa = PBXBuildFile; fileRef = 45F9BDF61B2098E5001EC7EF /* theme-chrome.js */; };
+		45FBC7521B207BFB00361B7B /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.m */; };
+		45FBC7541B207BFB00361B7B /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.m */; };
 		45FBC7561B207BFB00361B7B /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC7551B207BFB00361B7B /* main.c */; };
+		45FBC75E1B207C4300361B7B /* MarkdownRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = 45FBC75C1B207C4300361B7B /* MarkdownRenderer.h */; };
+		45FBC75F1B207C4300361B7B /* MarkdownRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 45FBC75D1B207C4300361B7B /* MarkdownRenderer.m */; };
+		45FBC7641B207D1C00361B7B /* ace.js in Resources */ = {isa = PBXBuildFile; fileRef = 45FBC7611B207D1C00361B7B /* ace.js */; };
+		45FBC7651B207D1C00361B7B /* mode-markdown.js in Resources */ = {isa = PBXBuildFile; fileRef = 45FBC7621B207D1C00361B7B /* mode-markdown.js */; };
+		45FBC7661B207D1C00361B7B /* theme-twilight.js in Resources */ = {isa = PBXBuildFile; fileRef = 45FBC7631B207D1C00361B7B /* theme-twilight.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45F9BDF61B2098E5001EC7EF /* theme-chrome.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-chrome.js"; sourceTree = "<group>"; };
 		45FBC74C1B207BFB00361B7B /* QLMarkdown.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QLMarkdown.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
 		45FBC7501B207BFB00361B7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		45FBC7551B207BFB00361B7B /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		45FBC75C1B207C4300361B7B /* MarkdownRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkdownRenderer.h; sourceTree = "<group>"; };
+		45FBC75D1B207C4300361B7B /* MarkdownRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkdownRenderer.m; sourceTree = "<group>"; };
+		45FBC7611B207D1C00361B7B /* ace.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ace.js; sourceTree = "<group>"; };
+		45FBC7621B207D1C00361B7B /* mode-markdown.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "mode-markdown.js"; sourceTree = "<group>"; };
+		45FBC7631B207D1C00361B7B /* theme-twilight.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "theme-twilight.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +62,12 @@
 		45FBC74E1B207BFB00361B7B /* QLMarkdown */ = {
 			isa = PBXGroup;
 			children = (
-				45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.c */,
-				45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.c */,
+				45FBC7511B207BFB00361B7B /* GenerateThumbnailForURL.m */,
+				45FBC7531B207BFB00361B7B /* GeneratePreviewForURL.m */,
 				45FBC7551B207BFB00361B7B /* main.c */,
+				45FBC75C1B207C4300361B7B /* MarkdownRenderer.h */,
+				45FBC75D1B207C4300361B7B /* MarkdownRenderer.m */,
+				45FBC7601B207D1C00361B7B /* ace */,
 				45FBC74F1B207BFB00361B7B /* Supporting Files */,
 			);
 			path = QLMarkdown;
@@ -66,6 +81,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		45FBC7601B207D1C00361B7B /* ace */ = {
+			isa = PBXGroup;
+			children = (
+				45F9BDF61B2098E5001EC7EF /* theme-chrome.js */,
+				45FBC7611B207D1C00361B7B /* ace.js */,
+				45FBC7621B207D1C00361B7B /* mode-markdown.js */,
+				45FBC7631B207D1C00361B7B /* theme-twilight.js */,
+			);
+			path = ace;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -73,6 +99,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FBC75E1B207C4300361B7B /* MarkdownRenderer.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +160,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45F9BDF71B2098E5001EC7EF /* theme-chrome.js in Resources */,
+				45FBC7661B207D1C00361B7B /* theme-twilight.js in Resources */,
+				45FBC7651B207D1C00361B7B /* mode-markdown.js in Resources */,
+				45FBC7641B207D1C00361B7B /* ace.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45FBC7521B207BFB00361B7B /* GenerateThumbnailForURL.c in Sources */,
-				45FBC7541B207BFB00361B7B /* GeneratePreviewForURL.c in Sources */,
+				45FBC7521B207BFB00361B7B /* GenerateThumbnailForURL.m in Sources */,
+				45FBC7541B207BFB00361B7B /* GeneratePreviewForURL.m in Sources */,
 				45FBC7561B207BFB00361B7B /* main.c in Sources */,
+				45FBC75F1B207C4300361B7B /* MarkdownRenderer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -223,7 +255,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 			};
@@ -270,6 +302,7 @@
 				45FBC75B1B207BFB00361B7B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
